@@ -9,8 +9,8 @@ using namespace MathF;
 
 int main()
 {
-	Vector3 a = Vector3::One;
-	Vector3 b = Vector3::Zero;
+	Vector3 a = Vector3::one;
+	Vector3 b = Vector3::zero;
 	b = a-b;
 	a = a / 10;
 	Vector3 c = a *= 20;
@@ -23,6 +23,16 @@ int main()
 	std::cout << b.z << std::endl;
 	std::cout << c.x << std::endl;
 
+	a = a + b;
+
+	if(Vector3::one == Vector3::one)
+	{
+		std::cout << "one equal one" << std::endl;
+	}
+	if (Vector3::one != Vector3::zero)
+	{
+		std::cout << "one do not equal zero" << std::endl;
+	}
 	system("pause");
     return 0;
 }
