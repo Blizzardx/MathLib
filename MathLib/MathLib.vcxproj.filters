@@ -16,8 +16,17 @@
     <Filter Include="Mathf">
       <UniqueIdentifier>{084a9ad7-8f5e-48c4-854b-73f5ffa3380b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Mathf\Vector3">
-      <UniqueIdentifier>{d3b848e9-4f2e-4165-b47b-251132df00a3}</UniqueIdentifier>
+    <Filter Include="Mathf\Include">
+      <UniqueIdentifier>{4dbac732-bdde-4542-b04e-67b568500823}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mathf\Source">
+      <UniqueIdentifier>{baf6fdef-4e96-4237-86dc-da6d97df0443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mathf\Include\Vector3">
+      <UniqueIdentifier>{938b1e4b-0d4d-4372-9a05-cc33b5925ab3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mathf\Source\Vector3">
+      <UniqueIdentifier>{110d425d-b0da-4d65-9b13-1bdc8773ae54}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -30,8 +39,8 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Vector3.h">
-      <Filter>Mathf\Vector3</Filter>
+    <ClInclude Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MathLib\MathLib\Mathf\Include\Vector3\Vector3.h">
+      <Filter>Mathf\Include\Vector3</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -41,8 +50,8 @@
     <ClCompile Include="MathLib.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Vector3.cpp">
-      <Filter>Mathf\Vector3</Filter>
+    <ClCompile Include="C:\Users\Administrator\Documents\Visual Studio 2015\Projects\MathLib\MathLib\Mathf\Source\Vector3\Vector3.cpp">
+      <Filter>Mathf\Source\Vector3</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

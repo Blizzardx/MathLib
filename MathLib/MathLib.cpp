@@ -2,8 +2,9 @@
 //
 
 #include "stdafx.h"
-#include "Vector3.h"
 #include <iostream>
+#include "Vector3.h"
+
 using namespace MathF;
 
 int main()
