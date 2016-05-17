@@ -73,6 +73,7 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)\bin\$(Configuration)</OutDir>
     <IntDir>$(SolutionDir)\bin\lib\$(Configuration)</IntDir>
+    <IncludePath>$(SolutionDir)\MathLib\Mathf\Include;$(SolutionDir)\MathLib\Mathf\Include\Vector3;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
