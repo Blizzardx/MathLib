@@ -28,6 +28,12 @@
     <Filter Include="Mathf\Source\Vector3">
       <UniqueIdentifier>{110d425d-b0da-4d65-9b13-1bdc8773ae54}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Mathf\Include\Vector2">
+      <UniqueIdentifier>{abd0dde8-9a1b-44ac-9cf0-fcd3cc4e9963}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Mathf\Source\Vector2">
+      <UniqueIdentifier>{d91a7533-cf3a-45af-8c12-e7259010658d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -42,8 +48,11 @@
     <ClInclude Include="Mathf\Include\Vector3\Vector3.h">
       <Filter>Mathf\Include\Vector3</Filter>
     </ClInclude>
-    <ClInclude Include="Mathf\Include\Vector3\MathfTool.h">
-      <Filter>Mathf\Include\Vector3</Filter>
+    <ClInclude Include="Mathf\Include\MathfTool.h">
+      <Filter>Mathf\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Mathf\Include\Vector2\Vector2.h">
+      <Filter>Mathf\Include\Vector2</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -55,6 +64,9 @@
     </ClCompile>
     <ClCompile Include="Mathf\Source\Vector3\Vector3.cpp">
       <Filter>Mathf\Source\Vector3</Filter>
+    </ClCompile>
+    <ClCompile Include="Mathf\Source\Vector2\Vector2.cpp">
+      <Filter>Mathf\Source\Vector2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

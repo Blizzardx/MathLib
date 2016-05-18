@@ -73,7 +73,7 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(SolutionDir)\bin\$(Configuration)</OutDir>
     <IntDir>$(SolutionDir)\bin\lib\$(Configuration)</IntDir>
-    <IncludePath>$(SolutionDir)\MathLib\Mathf\Include;$(SolutionDir)\MathLib\Mathf\Include\Vector3;$(IncludePath)</IncludePath>
+    <IncludePath>$(SolutionDir)\MathLib\Mathf\Include\Vector2;$(SolutionDir)\MathLib\Mathf\Include;$(SolutionDir)\MathLib\Mathf\Include\Vector3;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -151,12 +151,14 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Mathf\Include\Vector3\MathfTool.h" />
+    <ClInclude Include="Mathf\Include\MathfTool.h" />
+    <ClInclude Include="Mathf\Include\Vector2\Vector2.h" />
     <ClInclude Include="Mathf\Include\Vector3\Vector3.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Mathf\Source\Vector2\Vector2.cpp" />
     <ClCompile Include="Mathf\Source\Vector3\Vector3.cpp" />
     <ClCompile Include="MathLib.cpp" />
     <ClCompile Include="stdafx.cpp">

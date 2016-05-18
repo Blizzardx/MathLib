@@ -1,19 +1,24 @@
 #pragma once
+#include<math.h>
+
 namespace MathF
 {
 	struct Vector3
 	{
-		float x;
-		float y;
-		float z;
-
-		Vector3();
-		Vector3(float x, float y, float z);
+				
+		Vector3(float x = 0.0F, float y = 0.0F, float z = 0.0F);
 		~Vector3();
 
-		Vector3 GetNormalized();
-		float GetMagnitude();
-		float GetSqrMagnitude();
+		void Normalize();
+		Vector3 GetNormalized() const;
+		float GetMagnitude() const;
+		float GetSqrMagnitude() const;
+		float GetX() const;
+		float GetY() const;
+		float GetZ() const;
+		float SetX(float x);
+		float SetY(float y);
+		float SetZ(float z);
 
 		Vector3 operator +(const Vector3 right) const;
 		Vector3 operator +=(const Vector3 right);
@@ -28,6 +33,11 @@ namespace MathF
 		Vector3 operator =(Vector3& value);
 
 	private:
+		// member
+		float x;
+		float y;
+		float z;
+
 		// normal
 		float m_fNormalX;
 		float m_fNormalY;
@@ -37,10 +47,14 @@ namespace MathF
 		float m_fMagnitude;
 		float m_fSqrMagnitude;
 
-		void UpdatgeNormal();
-		void UpdateMagnitude();
-
+		void UpdateParam();
+		
 	public:
+		static float Distance(const Vector3 left, const Vector3 right);
+		static float DistanceSqrt(const Vector3 left, const Vector3 right);
+		static float Dot(const Vector3 left, const Vector3 right);
+		static Vector3 Cross(const Vector3 left, const Vector3 right);
+		
 		/// <summary>
 		/// 
 		/// <para>
@@ -60,7 +74,7 @@ namespace MathF
 		/// <summary>
 		/// 
 		/// <para>
-		/// Shorthand for writing Vector3(1, 1, 1).
+		/// Shorthand for writing Vector3(0, 0, 1).
 		/// </para>
 		/// 
 		/// </summary>
