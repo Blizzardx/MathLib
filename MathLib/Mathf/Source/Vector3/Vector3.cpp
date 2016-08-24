@@ -225,12 +225,4 @@ namespace MathF
 	/// 
 	/// </summary>
 	const Vector3  Vector3::right = Vector3(1.0f, 0.0f, 0.0f);
-
 }
-
-
-
-
-
-
-

@@ -20,7 +20,9 @@ namespace MathF
 			{
 				value = 0.0f;
 			}
-			return value;
+			int tmp_i = pow(10.0f, keepCount);
+			int tmp = value * tmp_i;
+			return static_cast<float>(tmp) / tmp_i;
 		}
 		static float InvSqrtf(float x)
 		{

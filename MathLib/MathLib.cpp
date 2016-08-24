@@ -4,9 +4,10 @@
 #include "stdafx.h"
 #include <iostream>
 #include "Vector3.h"
+#include "MathfTool.h"
 
 using namespace MathF;
-
+using namespace std;
 int main()
 {
 	Vector3 a = Vector3::one;
@@ -47,6 +48,31 @@ int main()
 	std::cout << Vector3::Distance(a, b) << std::endl;
 	m /= 0.0f;
 	std::cout << m.GetMagnitude() << std::endl;
+	
+	int ps1 = 2;
+	int psm = ps1 = 2;
+	std::cout << ps1 << " " << psm << std::endl;
+
+	float value1 = 0.13f;
+	float value2 = 100.0f;
+
+	int v = (int)(value1 * value2);
+	float f = value1 * value2;
+	int v2 = (int)f;
+	if((int)(value1 * value2) == v2)
+	{
+		std::cout << "XXX" << std::endl;
+	}
+	std::cout<< v << std::endl;
+	std::cout << f << std::endl;
+	std::cout << v2 << std::endl;
+
+	float afx = 0.123456f;
+	cout << afx << endl;
+	for (int i = 0; i < 10; ++i)
+	{
+		cout << MathF::MathfTool::FixFloat(afx, i) << endl;
+	}
 	system("pause");
 	return 0;
 }
